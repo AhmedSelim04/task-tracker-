@@ -1,0 +1,7 @@
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\bin\Debug\Task tracker console project.exe.config
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\bin\Debug\Task tracker console project.exe
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\bin\Debug\Task tracker console project.pdb
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\obj\Debug\Task tracker console project.csproj.AssemblyReference.cache
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\obj\Debug\Task tracker console project.csproj.CoreCompileInputs.cache
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\obj\Debug\Task tracker console project.exe
+C:\Users\EL-MAGIC\Desktop\projects\Task tracker console project\obj\Debug\Task tracker console project.pdb
