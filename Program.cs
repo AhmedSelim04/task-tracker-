@@ -5,10 +5,10 @@ namespace Task_tracker_console_project
 {
     internal class Program
     {
-        const int sz = 10000;
-        static int cnt = 0;
-        static string[] task_content = new string[sz];
-        static bool[] task_done = new bool[sz];
+        const int size = 10000;
+        static int number = 0;
+        static string[] task_content = new string[size];
+        static bool[] task_done = new bool[size];
         static void Main(string[] args)
         {
             // 0/ welcome user
@@ -21,10 +21,9 @@ namespace Task_tracker_console_project
 
             start();
 
-            int choice = 3;
             while (true)
             {
-
+                int choice;
                 options();
 
                 Console.Write("Enter your choice : ");
@@ -38,19 +37,19 @@ namespace Task_tracker_console_project
                 
                 if (choice == 1)
                 {
-                    if (cnt >= sz)
+                    if (number >= size)
                     {
                         Console.WriteLine("enough tasks here \n");
                         continue;
                     }
-                    cnt++;
+                    number++;
                     add_task();
                     Console.Clear();
                     
                 }
                 else if (choice == 2)
                 {
-                    if (cnt < 1)
+                    if (number < 1)
                     {
                         Console.WriteLine("No tasks here \n");
                         continue;
@@ -61,7 +60,7 @@ namespace Task_tracker_console_project
                 else if (choice == 3)
                 {
                     
-                    if (cnt < 1)
+                    if (number < 1)
                     {
                         Console.WriteLine("No tasks here \n");
                         continue;
@@ -71,19 +70,19 @@ namespace Task_tracker_console_project
                 }
                 else if (choice == 4 )
                 {
-                    if (cnt < 1)
+                    if (number < 1)
                     {
                         Console.WriteLine("No tasks here \n");
                         continue;
                     }
-                    del();
-                    cnt--;
+                    delete();
+                    number--;
 
                     Console.Clear();
                 }
                 else if (choice == 5)
                 {
-                    if (cnt < 1)
+                    if (number < 1)
                     {
                         Console.WriteLine("No tasks here \n");
                         continue;
@@ -123,7 +122,7 @@ namespace Task_tracker_console_project
                 Console.Write("Enter the task's name : ");
                 string name = Console.ReadLine();
                 bool iss = false;
-                for (int i = 1; i < cnt; i++)
+                for (int i = 1; i < number; i++)
                 {
                     if (task_content[i] == name) iss = true;
                 }
@@ -133,8 +132,8 @@ namespace Task_tracker_console_project
                 }
                 else
                 {
-                    task_content[cnt] = name;
-                    task_done[cnt] = false;
+                    task_content[number] = name;
+                    task_done[number] = false;
                     break;
                 }
             }
@@ -148,7 +147,7 @@ namespace Task_tracker_console_project
                 show_all_tasks();
                 Console.Write("Enter your choice : ");
                 string a = Console.ReadLine();
-                if (!(int.TryParse(a, out num)) || (num < 1) || (num > cnt))
+                if (!(int.TryParse(a, out num)) || (num < 1) || (num > number))
                 {
                     Console.WriteLine("Worng input , please try again\n");
                 }
@@ -170,7 +169,7 @@ namespace Task_tracker_console_project
         }
         static void show_all_tasks()
         {
-            for(int i = 1; i <= cnt; i++)
+            for(int i = 1; i <= number; i++)
             {
                 Console.WriteLine((i) + ") " + task_content[i] + " : " + (task_done[i] ? "Done" : "Go on"));
             }
@@ -178,12 +177,12 @@ namespace Task_tracker_console_project
         }
         static void reset()
         {
-            for(int i = 1; i <= cnt; i++)
+            for(int i = 1; i <= number; i++)
             {
                 task_done[i] = false;
             }
         }
-        static void del()
+        static void delete()
         {
 
             int choice;
@@ -192,13 +191,13 @@ namespace Task_tracker_console_project
                 show_all_tasks();
                 Console.Write("Enter your choice : ");
                 string a = Console.ReadLine();
-                if (!(int.TryParse(a, out choice)) || (choice < 1) || (choice > cnt))
+                if (!(int.TryParse(a, out choice)) || (choice < 1) || (choice > number))
                 {
                     Console.WriteLine("Worng input , please try again\n");
                 }
                 else break;
             }
-            for (int i = choice; i < cnt; i++)
+            for (int i = choice; i < number; i++)
             {
                 task_content[i] = task_content[i + 1];
                 task_done[i] = task_done[i + 1];
