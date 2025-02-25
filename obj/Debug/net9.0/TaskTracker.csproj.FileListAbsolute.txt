@@ -1,0 +1,14 @@
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\bin\Debug\net9.0\TaskTracker.exe
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\bin\Debug\net9.0\TaskTracker.deps.json
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\bin\Debug\net9.0\TaskTracker.runtimeconfig.json
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\bin\Debug\net9.0\TaskTracker.dll
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\bin\Debug\net9.0\TaskTracker.pdb
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.GeneratedMSBuildEditorConfig.editorconfig
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.AssemblyInfoInputs.cache
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.AssemblyInfo.cs
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.csproj.CoreCompileInputs.cache
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.dll
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\refint\TaskTracker.dll
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.pdb
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\TaskTracker.genruntimeconfig.cache
+F:\DotNet\ProjectsInRoadmapSh\TaskTracker\obj\Debug\net9.0\ref\TaskTracker.dll
